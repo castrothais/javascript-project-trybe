@@ -7,11 +7,11 @@ function compareTrue(valor1,valor2) {
   }
 }
 
-
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+  return base*height/2;
 }
+console.log(calcArea(51,1))
 
 // Desafio 3
 function splitSentence() {
