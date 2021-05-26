@@ -19,9 +19,11 @@ function splitSentence(string) {
 console.log(splitSentence('Agora vai. Fé'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arraystring) {
+  let concatenacao = arraystring[arraystring.length-1] + ', ' + arraystring[0]
+  return concatenacao
 }
+console.log(concatName('Thaís Sampaio'));
 
 // Desafio 5
 function footballPoints() {
