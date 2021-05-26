@@ -18,7 +18,7 @@ function splitSentence(string) {
 }
 console.log(splitSentence('Agora vai. Fé'));
 
-// Desafio 4
+// Desafio 4- Corrigir Erro->Linha 23: Unexpected string concatenation.
 function concatName(arraystring) {
   let concatenacao = arraystring[arraystring.length - 1] + ', ' + arraystring[0];
   return concatenacao;
@@ -26,9 +26,12 @@ function concatName(arraystring) {
 console.log(concatName('Thaís Sampaio'));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let valorVitoria = wins * 3;
+  let valorEmpate = ties * 1;
+  return valorVitoria + valorEmpate;
 }
+console.log(footballPoints(0, 0))
 
 // Desafio 6
 function highestCount() {
