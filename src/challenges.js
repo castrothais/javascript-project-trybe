@@ -20,8 +20,8 @@ console.log(splitSentence('Agora vai. Fé'));
 
 // Desafio 4
 function concatName(arraystring) {
-  let concatenacao = arraystring[arraystring.length-1] + ', ' + arraystring[0]
-  return concatenacao
+  let concatenacao = arraystring[arraystring.length - 1] + ', ' + arraystring[0];
+  return concatenacao;
 }
 console.log(concatName('Thaís Sampaio'));
 
