@@ -31,7 +31,7 @@ function footballPoints(wins, ties) {
   let valorEmpate = ties * 1;
   return valorVitoria + valorEmpate;
 }
-console.log(footballPoints(0, 0))
+console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
