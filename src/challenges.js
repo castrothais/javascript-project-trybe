@@ -16,11 +16,11 @@ console.log(calcArea(51, 1));
 function splitSentence(string) {
   return string.split(' ');
 }
-console.log(splitSentence('Agora vai. Fé'));
+console.log(splitSentence('Agora vai.Fé'));
 
-// Desafio 4- Corrigir Erro->Linha 23: Unexpected string concatenation.
+// Desafio 4
 function concatName(arraystring) {
-  let concatenacao = arraystring[arraystring.length - 1] + ', ' + arraystring[0];
+  let concatenacao = `${arraystring[arraystring.length - 1]}, ${arraystring[0]}`;
   return concatenacao;
 }
 console.log(concatName('Thaís Sampaio'));
@@ -34,9 +34,28 @@ function footballPoints(wins, ties) {
 console.log(footballPoints(0, 0));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+// 1° Para descobrir o maior número
+function maiorNumero(numbers) {
+  let numeroMaior = numbers[0];
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > numeroMaior) {
+      numeroMaior = numbers[index];
+    }
+  }
+  return numeroMaior;
 }
+// 2° Quantas vezes o maior número aparece
+function highestCount(numbers) {
+  let numeroMaior = maiorNumero(numbers);
+  let resultado = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numeroMaior === numbers[index]) {
+      resultado += 1;
+    }
+  }
+  return resultado;
+}
+console.log(highestCount([1, 3, 5, 7, 9, 9]));
 
 // Desafio 7
 function catAndMouse() {
